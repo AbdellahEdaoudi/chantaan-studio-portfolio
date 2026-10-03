@@ -2,6 +2,7 @@ import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 import path from "path"
 // Chantan Element Editor tagger (dev only) — stamps data-chantan-src on JSX
+// @ts-ignore — no type declarations for this local .mjs plugin
 import chantanTagger from "./chantan-tagger.mjs"
 import pkg from "./package.json"
 
