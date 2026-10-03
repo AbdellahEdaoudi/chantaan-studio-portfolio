@@ -1,10 +1,11 @@
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
+import tailwindcss from "@tailwindcss/vite"
 import path from "path"
 // Chantan Element Editor tagger (dev only) — stamps data-chantan-src on JSX
 // @ts-ignore — no type declarations for this local .mjs plugin
 import chantanTagger from "./chantan-tagger.mjs"
-import pkg from "./package.json"
+import pkg from "./package.json" with { type: "json" }
 
 // Pre-bundle EVERY preinstalled dependency at server boot. Without this, the
 // first import of a not-yet-optimized package (e.g. the AI adds a chart or
@@ -22,9 +23,9 @@ const prebundle = [
 ]
 
 export default defineConfig(({ mode }) => ({
-  plugins: [react(mode === "production" ? {} : { babel: { plugins: [[chantanTagger, { root: process.cwd() }]] } })],
+  plugins: [tailwindcss(), react(mode === "production" ? {} : { transform: { babel: { plugins: [[chantanTagger, { root: process.cwd() }]] } } })],
   resolve: {
-    alias: { "@": path.resolve(__dirname, "./src") },
+    alias: { "@": path.resolve(import.meta.dirname, "./src") },
   },
   optimizeDeps: {
     include: prebundle,
