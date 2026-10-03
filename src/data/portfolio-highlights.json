@@ -1,0 +1,74 @@
+[
+  {
+    "title": "DGT Portfolio Builder",
+    "body": "منصة SaaS لإنشاء محافظ مهنية، تتيح دعم تعدد اللغات والنطاقات المخصصة، والاختيار من بين ثيمات، وتوليد سيرة ذاتية. تضم لوحة إدارة للمحتوى والاشتراكات والتحليلات. بُنيت باستخدام Next.js وNode.js وExpress وMongoDB وPayPal وCloudinary.",
+    "type": "project",
+    "key": "dgt",
+    "image": "/assets/project-dgtportfolio.webp",
+    "url": "https://dgtportfolio.com",
+    "technologies": "Next.js · Node.js · Express · MongoDB · PayPal · Cloudinary"
+  },
+  {
+    "title": "ED Hotel",
+    "body": "نظام للحجز الفندقي والدفع الإلكتروني، يوفّر تذاكر إلكترونية وتأكيدات عبر البريد الإلكتروني. ويضم لوحة إدارة للحجوزات والمدفوعات والعملاء. يستخدم المشروع Next.js وNode.js وMongoDB وStripe وJWT وCloudinary.",
+    "type": "project",
+    "key": "hotel",
+    "image": "/assets/project-edhotel.webp",
+    "url": "https://edhotel.vercel.app",
+    "technologies": "Next.js · Node.js · MongoDB · Stripe · JWT · Cloudinary"
+  },
+  {
+    "title": "ED ChatFlow",
+    "body": "A real-time chat application with implemented end-to-end encryption to protect message privacy, alongside secure authentication and user and conversation management. Built with Next.js, Node.js, Socket.IO, MongoDB, JWT, and Bcrypt.",
+    "type": "project",
+    "key": "chatflow",
+    "image": "/assets/project-edchatflow.webp",
+    "url": "https://edchatflow.vercel.app",
+    "technologies": "Next.js · Node.js · Socket.IO · MongoDB · JWT · Bcrypt"
+  },
+  {
+    "title": "E-commerce Back-End",
+    "body": "واجهة خلفية للتجارة الإلكترونية لإدارة المستخدمين وكتالوج المنتجات والسلة والطلبات والكوبونات ومدفوعات Stripe. تعتمد على بنية API نظيفة قابلة للتوسع، وتستخدم NestJS وTypeScript وMongoDB وStripe وJWT وRBAC.",
+    "type": "project",
+    "key": "ecommerce",
+    "image": "/assets/project-ecommerce.webp",
+    "url": "https://github.com/AbdellahEdaoudi",
+    "technologies": "NestJS · TypeScript · MongoDB · Stripe · JWT · RBAC"
+  },
+  {
+    "title": "Founder & Full Stack Developer",
+    "body": "منذ أكتوبر 2025، يؤسس Abdellah Edaoudi ويطوّر منصة SaaS لإنشاء المحافظ المهنية باستخدام Next.js، مع تكامل PayPal ودعم النطاقات المخصصة. تشمل مهامه تطوير REST APIs عبر Node.js وExpress.js، والمصادقة باستخدام JWT وNextAuth.js وRBAC، وتحسين الأداء وSEO عبر SSR، والنشر على Vercel مع CI/CD وGit وGitHub.",
+    "type": "experience",
+    "key": "founder",
+    "company": "DGT Portfolio",
+    "date": "Oct 2025 — Present",
+    "location": "Remote"
+  },
+  {
+    "title": "Full Stack Developer Intern",
+    "body": "خلال التدريب من سبتمبر 2023 إلى يونيو 2024، عمل على React.js وJavaScript والخدمات الخلفية وREST APIs باستخدام Node.js وExpress.js، واكتسب خبرة في Laravel وPHP وMongoDB وMySQL. كما تعرّف إلى Agile/Scrum واستخدم Docker وGit وGitHub وSonarQube.",
+    "type": "experience",
+    "key": "cmc-fullstack",
+    "company": "Cités des Métiers et des Compétences",
+    "date": "Sep 2023 — Jun 2024",
+    "location": "Laayoune, Morocco"
+  },
+  {
+    "title": "Full Stack MERN Developer Intern",
+    "body": "في مارس 2024، طوّر تطبيقًا متكاملًا لإدارة المهام مع مصادقة JWT وREST APIs اختبرها باستخدام Postman، ثم نشر التطبيق على Vercel.",
+    "type": "experience",
+    "key": "aref",
+    "company": "Académie Régionale d'Éducation et de Formation",
+    "date": "Mar 2024",
+    "location": "Laayoune, Morocco"
+  },
+  {
+    "title": "Digital Developer Intern",
+    "body": "من نوفمبر 2022 إلى يونيو 2023، أنجز مشاريع في البرمجة والخوارزميات، وطوّر مواقع باستخدام HTML وCSS وJavaScript وPHP. كما عمل على قواعد بيانات SQL وتعرّف إلى أساسيات أمن نظم المعلومات.",
+    "type": "experience",
+    "key": "digital-dev",
+    "company": "Cités des Métiers et des Compétences",
+    "date": "Nov 2022 — Jun 2023",
+    "location": "Laayoune, Morocco"
+  }
+]

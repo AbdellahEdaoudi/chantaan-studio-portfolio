@@ -1,0 +1,84 @@
+{
+ "v": 1,
+ "at": "2026-10-03T17:55:58.973Z",
+ "incomplete": false,
+ "pendingKeysByLang": {
+  "fr": 0,
+  "ar": 0
+ },
+ "a": [],
+ "b": [],
+ "c": [
+  {
+   "path": "src/components/ErrorBoundary.tsx",
+   "reason": "class-component",
+   "snippet": "Something went wrong",
+   "line": 32
+  },
+  {
+   "path": "src/components/ErrorBoundary.tsx",
+   "reason": "class-component",
+   "snippet": "An unexpected error occurred. Try refreshing the page.",
+   "line": 34
+  },
+  {
+   "path": "src/components/ErrorBoundary.tsx",
+   "reason": "class-component",
+   "snippet": "Reload",
+   "line": 45
+  },
+  {
+   "path": "src/components/Footer.tsx",
+   "reason": "unclassified-token",
+   "snippet": "Brand",
+   "line": 24
+  },
+  {
+   "path": "src/components/Header.tsx",
+   "reason": "unclassified-token",
+   "snippet": "Brand",
+   "line": 20
+  },
+  {
+   "path": "src/lib/chantan-ai.ts",
+   "reason": "excluded-dir-text",
+   "snippet": "AI request failed ()",
+   "line": 94
+  },
+  {
+   "path": "src/data/portfolio-highlights.json",
+   "reason": "unrendered-data-prop",
+   "snippet": "technologies: \"Next.js · Node.js · Express · MongoDB · \", \"Next.js · Node.js · MongoDB · Stripe · J\"",
+   "count": 4
+  },
+  {
+   "path": "src/data/portfolio-highlights.json",
+   "reason": "unrendered-data-prop",
+   "snippet": "company: \"DGT Portfolio\", \"Cités des Métiers et des Compétences\"",
+   "count": 4
+  },
+  {
+   "path": "src/data/portfolio-highlights.json",
+   "reason": "unrendered-data-prop",
+   "snippet": "date: \"Oct 2025 — Present\", \"Sep 2023 — Jun 2024\"",
+   "count": 3
+  },
+  {
+   "path": "src/data/portfolio-highlights.json",
+   "reason": "unrendered-data-prop",
+   "snippet": "location: \"Laayoune, Morocco\", \"Laayoune, Morocco\"",
+   "count": 3
+  },
+  {
+   "path": "index.html",
+   "reason": "tab-title",
+   "snippet": "<title>عبد الله الداودي | مطوّر Full Stack Web</title>"
+  },
+  {
+   "path": "supabase/functions/_shared/cors.ts",
+   "reason": "server-messages",
+   "snippet": "2 text(s) across 1 edge function file(s)",
+   "count": 2
+  }
+ ]
+}
