@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { useTranslation } from 'react-i18next'
 import { LanguagePickerModal } from "./LanguagePickerModal"
-import { LanguageToggle } from "./LanguageToggle"
 
 function Navbar() {
   const { t } = useTranslation()
@@ -29,7 +28,6 @@ function Navbar() {
           <a href="#education" className="transition-opacity hover:opacity-70">{t("التعليم")}</a>
           <a href="#contact" className="rounded-full bg-primary px-4 py-2.5 text-primary-foreground transition-all hover:-translate-y-0.5">{t("تواصل")}</a>
           <LanguagePickerModal />
-        <LanguageToggle />
         </nav>
         <div className="flex shrink-0 items-center gap-2 lg:hidden">
           <LanguagePickerModal />
