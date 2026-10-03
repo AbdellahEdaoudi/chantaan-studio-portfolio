@@ -2,6 +2,7 @@ import { ArrowDown, ArrowUpRight, Github, Linkedin, Mail, MapPin } from "lucide-
 import { MotionItem, MotionReveal } from "@/components/MotionReveal"
 import Navbar from "@/components/Navbar"
 import highlights from "@/data/portfolio-highlights.json"
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 type Highlight = {
@@ -29,24 +30,35 @@ const skillGroups = [
 ]
 
 function Index() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+
+  // Update <title> and <meta name="description"> on language change
+  useEffect(() => {
+    document.title = t('__page_title__')
+    const metaDesc = document.querySelector('meta[name="description"]')
+    if (metaDesc) metaDesc.setAttribute('content', t('__page_description__'))
+    // Update dir and lang on <html> for proper RTL/LTR
+    document.documentElement.lang = i18n.language
+    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr'
+  }, [i18n.language, t])
+
   return (
     <main className="overflow-hidden bg-background text-foreground">
       <Navbar />
 
-      <section id="home" className="on-media relative isolate flex min-h-[760px] min-h-svh items-center overflow-hidden">
-        <img src="/assets/portfolio-hero.webp" alt={t("مساحة عمل لمطوّر ويب في ضوء دافئ")} className="absolute inset-0 -z-20 h-full w-full object-cover" />
+      <section id="home" className="on-media relative isolate flex min-h-[820px] min-h-svh items-center overflow-hidden">
+        <img src="/assets/portfolio-hero.webp" alt={t("مساحة عمل لمطوّر ويب في ضوء دافئ")} className="absolute inset-0 -z-20 h-full w-full object-cover object-top" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/45 to-black/35" />
-        <div className="mx-auto grid w-full max-w-7xl items-center gap-10 px-6 pb-20 pt-28 md:grid-cols-[1.25fr_0.75fr] md:gap-14 md:px-12 md:pb-24">
+        <div className="mx-auto grid w-full max-w-7xl items-center gap-8 px-6 pb-12 pt-20 md:grid-cols-[1.25fr_0.75fr] md:gap-12 md:px-12 md:pb-16">
           <MotionReveal delay={0.05}>
-            <MotionItem><p className="mb-6 text-sm font-semibold tracking-wide text-white/75">{t("مطوّر Full Stack · العيون، المغرب")}</p></MotionItem>
-            <MotionItem><h1 className="max-w-4xl text-5xl font-extrabold leading-[1.04] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-[5.5rem]">{t("أحوّل الأفكار")}<br /><span className="text-primary">{t("إلى منتجات رقمية.")}</span></h1></MotionItem>
-            <MotionItem><p className="mt-7 max-w-2xl text-lg leading-8 text-white/85 md:text-xl">{t("أنا عبد الله الداودي، مطوّر ويب متكامل أبني تطبيقات سريعة وآمنة وقابلة للتوسع — من واجهة الاستخدام إلى منطق الخادم.")}</p></MotionItem>
-            <MotionItem><div className="mt-9 flex flex-wrap items-center gap-3">
+            <MotionItem><p className="mb-4 text-sm font-semibold tracking-wide text-white/75">{t("مطوّر Full Stack · العيون، المغرب")}</p></MotionItem>
+            <MotionItem><h1 className="max-w-4xl text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-[2.75rem] md:text-5xl lg:text-[3.75rem]">{t("أحوّل الأفكار")}<br /><span className="text-primary">{t("إلى منتجات رقمية.")}</span></h1></MotionItem>
+            <MotionItem><p className="mt-5 max-w-2xl text-base leading-7 text-white/85 md:text-lg">{t("أنا عبد الله الداودي، مطوّر ويب متكامل أبني تطبيقات سريعة وآمنة وقابلة للتوسع — من واجهة الاستخدام إلى منطق الخادم.")}</p></MotionItem>
+            <MotionItem><div className="mt-7 flex flex-wrap items-center gap-3">
               <a href="#work" className="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3.5 font-bold text-primary-foreground transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">{t("استكشف مشاريعي")} <ArrowDown size={17} className="rtl:rotate-180" /></a>
               <a href="mailto:abdellahedaoudi.dev@gmail.com" className="rounded-full border border-white/55 px-6 py-3.5 font-semibold text-white transition-colors duration-300 hover:bg-white/10">{t("تواصل بشأن فرصة عمل")}</a>
             </div></MotionItem>
-            <MotionItem><div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-white/25 pt-5 text-sm text-white/75"><span>{t("+2 سنوات خبرة عملية")}</span><span>{t("منتجات ويب متكاملة")}</span><span className="inline-flex items-center gap-2"><MapPin size={15} /> {t("العيون، المغرب")}</span></div></MotionItem>
+            <MotionItem><div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-white/25 pt-4 text-sm text-white/75"><span>{t("+2 سنوات خبرة عملية")}</span><span>{t("منتجات ويب متكاملة")}</span><span className="inline-flex items-center gap-2"><MapPin size={15} /> {t("العيون، المغرب")}</span></div></MotionItem>
           </MotionReveal>
           <MotionReveal className="hidden md:block">
             <MotionItem><div className="relative mx-auto w-full max-w-[390px] rounded-[2rem] border border-white/30 bg-black/25 p-3 shadow-2xl backdrop-blur-sm">
