@@ -1,4 +1,6 @@
-{
+﻿{
+  "__page_title__": "عبد الله الداودي | مطوّر Full Stack Web",
+  "__page_description__": "عبد الله الداودي — مطوّر Full Stack من العيون، المغرب. خبرة في React وNext.js وNode.js وNestJS وبناء تطبيقات ويب آمنة وقابلة للتوسع.",
   "البريد الإلكتروني": "البريد الإلكتروني",
   "تواصل": "تواصل",
   "التعليم": "التعليم",
@@ -123,3 +125,4 @@
   "Select language": "اختر اللغة",
   "A real-time chat application with implemented end-to-end encryption to protect message privacy, alongside secure authentication and user and conversation management. Built with Next.js, Node.js, Socket.IO, MongoDB, JWT, and Bcrypt.": "تطبيق دردشة فوري يوفّر تشفيرًا شاملًا لحماية خصوصية الرسائل، إلى جانب مصادقة آمنة وإدارة المستخدمين والمحادثات. تم تطويره باستخدام Next.js وNode.js وSocket.IO وMongoDB وJWT وBcrypt."
 }
+

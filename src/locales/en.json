@@ -1,4 +1,6 @@
-{
+﻿{
+  "__page_title__": "Abdellah Edaoudi | Full Stack Web Developer",
+  "__page_description__": "Abdellah Edaoudi — Full Stack Developer from Laayoune, Morocco. Expert in React, Next.js, Node.js, NestJS, building secure and scalable web apps.",
   "MongoDB": "MongoDB",
   "MySQL": "MySQL",
   "NextAuth.js": "NextAuth.js",
@@ -123,3 +125,4 @@
   "Select language": "Select language",
   "A real-time chat application with implemented end-to-end encryption to protect message privacy, alongside secure authentication and user and conversation management. Built with Next.js, Node.js, Socket.IO, MongoDB, JWT, and Bcrypt.": "A real-time chat application with implemented end-to-end encryption to protect message privacy, alongside secure authentication and user and conversation management. Built with Next.js, Node.js, Socket.IO, MongoDB, JWT, and Bcrypt."
 }
+
