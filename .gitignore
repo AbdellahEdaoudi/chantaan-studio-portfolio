@@ -5,6 +5,9 @@ dist/
 .env.*.local
 *.log
 
+# TypeScript build cache
+*.tsbuildinfo
+
 # Supabase local dev
 supabase/.temp/
 supabase/.branches/
